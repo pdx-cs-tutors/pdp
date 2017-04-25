@@ -6,6 +6,7 @@
 #include <map>
 #include <ostream>
 #include <initializer_list>
+#include <iterator>
 #include "termcolor.h"
 
 std::string stringify(int value);

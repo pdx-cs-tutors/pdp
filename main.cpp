@@ -1,3 +1,4 @@
+#include <cstring>
 #include <iostream>
 #include <sstream>
 #include "tests/include/lll_test.h"
