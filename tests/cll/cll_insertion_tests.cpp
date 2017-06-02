@@ -16,21 +16,21 @@ CLLInsertionTests::CLLInsertionTests() {
     });
 
     test("append_unique", [=] {
-        call = "append(rear, 2)";
+        call = "append_unique(rear, 2)";
         initialize({3, 2, 1});
         retval = new int(append_unique(rear, 2));
         expectList({3, 2, 1});
         expectReturn(0);
     });
     test("append_unique", [=] {
-        call = "append(rear, 2)";
-        initialize({3, 2, 9});
+        call = "append_unique(rear, 2)";
+        initialize({3, 1, 9});
         retval = new int(append_unique(rear, 2));
-        expectList({3, 2, 9, 2});
+        expectList({3, 1, 9, 2});
         expectReturn(1);
     });
     test("append_unique", [=] {
-        call = "append(rear, 2)";
+        call = "append_unique(rear, 2)";
         retval = new int(append_unique(rear, 2));
         expectList({2});
         expectReturn(1);
