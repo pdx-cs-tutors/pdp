@@ -55,7 +55,7 @@ LLLRemovalTests::LLLRemovalTests() {
         initialize({1, 2, 6, 6});
         retval = new int(remove_all(head, 6));
         expectList({1, 2});
-        expectReturn(1);
+        expectReturn(2);
     });
     test("remove_all", [=] {
         call = "remove_all(head, 6)";
